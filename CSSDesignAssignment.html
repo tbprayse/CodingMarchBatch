@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS display</title>
+    <style>
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            width: 900px;
+            height: 500px;
+            position: absolute;
+            left: 130px;
+            top: 25px;
+            right: 300px;
+            
+        }
+        body {
+            background-color: blue;
+        }
+        ul {
+            list-style-type: none;
+            text-align: right;
+            margin-right: 50px;
+        }
+        li {
+            display: inline;
+            margin-right: 10px;
+            color: black;
+            font-weight: 500;
+            font-family: sans-serif;
+        }
+        .opa {
+            opacity: 0.6;
+            display: inline;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .sign {
+            display: inline;
+            border-radius: 10px;
+            border: none;
+            text-decoration: none;
+            padding: 5px 9px 5px 9px;
+            background-color: darkblue;
+            color: white;
+            font-family: sans-serif;
+        }
+        .log {
+            color: black;
+            font-family: sans-serif;
+        }
+        label {
+            font-family: sans-serif;
+            color: darkblue;
+            position: absolute;
+            top:20px;
+            font-weight: 600;
+        }
+        .now {
+            color: white;
+            border: none;
+            border-radius: 1px;
+            background-color: darkblue;
+            padding: 7px 8px 7px 8px;
+            position: absolute;
+            top: 340px;
+        }
+        .demo {
+            border: none;
+            background-color: white;
+            font-weight: 600;
+            color: black;
+            position: absolute;
+            top: 345px;
+            left: 160px;
+        }
+        .new {
+            padding-left: 60px;
+        }
+        .para {
+            font-weight: 700;
+            font-size: 50px;
+            font-family: sans-serif;
+            color: black;
+            position: absolute;
+            top: 30px;
+        }
+        .part {
+            color: black;
+            font-weight: 700;
+            font-family: 'Segoe UI';
+            font-size: 13px;
+            position: absolute;
+            top: 250px;
+        }
+        .hike {
+            width: 450px;
+            height: 350px;
+            position: absolute;
+            left: 400px;
+            top: 70px;
+        }
+        .icon {
+            color: darkblue;
+            background-color: darkblue;
+            height: 40px;
+            width: 40px;
+            position: absolute;
+            left: 60px;
+            bottom: 48px;
+        }
+        .h4 {
+            position: absolute;
+            left: 100px;
+            bottom: 55px;
+            font-weight: 700;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .pad {
+            position: absolute;
+            top: 415px;
+            left: 100px;
+            font-size: small;
+            color: black;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li>Home</li>
+            <div class="opa">
+                <li>Products</li>
+                <li>Resources</li>
+                <li>Contact</li>
+                <li>Blog</li>
+            </div>
+            <a href="style3.html" class="log">Login</a>
+            <button class="sign">Sign up</button>
+        </ul>
+        <img class="hike" src="hikeimage.jpeg" alt="hikeimage">
+        <div class="new">
+            <label>Travel.com</label>
+            <p class="para">Explore <br>Beautiful <br>World.</p>
+            <p class="part">Traveling is one about leadership, and <br> chartering your own when everybody else <br> is doing the same thing </p>
+            <button class="now">Explore Now</button>
+            <button class="demo"><img src="play-btn.svg" alt="play.svg">Play Demo</button>
+            <img class="icon" src="download (1).png" alt="image">
+            <p class="h4">1000+ Hiking</p>
+            <p class="pad"> more than professional and amateur <br> climbers use our facilities within one month</p>
+        </div>
+    </div>
+</body>
+</html>

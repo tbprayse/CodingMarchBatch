@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <style>
+        #pad {
+            color: white;
+            font-weight: bold;
+            font-family: 'Trebuchet MS';
+            font-size: 14px;
+            border: none;
+            background-color: black;
+            position: absolute;
+            top: 390px;
+            left: 150px;
+        }
+        .life {
+            font-weight: 300;
+            font-size: 50px;
+            font-family: sans-serif;
+            color: white;
+            position: absolute;
+            top: 60px;
+        }
+        .best {
+            font-weight: 500;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 13px;
+            color: white;
+            position: absolute;
+            top: 300px;
+        }
+        .container {
+            background-color: black;
+            border-radius: 10px;
+            width: 900px;
+            height: 500px;
+            position: absolute;
+            left: 130px;
+            top: 25px;
+            right: 300px;
+            bottom: 50px;
+        }
+        body {
+            background-color: pink;
+        }
+        .ul {
+            list-style-type: none;
+            margin-right: 50px;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        li {
+            margin-right: 20px;
+            display: inline;
+            font-weight: 500;
+            color: white;
+            font-size: small;
+        }
+        #new {
+            padding-left: 60px;
+        }
+        .sign {
+            display: inline;
+            color: white;
+            border: none;
+            border-radius: 1px;
+            background-color: blueviolet;
+            padding: 5px 5px 5px 5px;
+            margin-right: 20px;
+            font-size: small;
+        }
+        .log {
+            color: white;
+            font-size: small;
+            font-family: 'Franklin Gothic Medium';
+        }
+        .img {
+            width: 250px;
+            height: 350px;
+            position: absolute;
+            right: 200px;
+            top: 70px;
+        }
+        .plan {
+            color: white;
+            border: none;
+            border-radius: 1px;
+            background-color: blueviolet;
+            padding: 5px 5px 5px 5px;
+            position: absolute;
+            top: 390px;
+        }
+        .pos {
+            position: absolute;
+            top: -1px;
+            right: 20px;
+        }
+        label {
+            font-family: sans-serif;
+            color: yellow;
+            position: absolute;
+            top:20px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <ul class="ul">
+        <li>About</li>
+        <li>Services</li>
+        <li>Pricing</li>
+        <li>Contact</li>
+    </ul>
+    <div>
+        <ul class="pos">
+        <li class="log">Login</li>
+        <button class="sign">Sign up</button>
+        </ul>
+    </div>
+    <div class="life" id="new">
+        <p>Life is short <br> and the world <br> is wide!</p>
+    </div>
+    <img class="img" src="download2.jpg">
+    <div id="new">
+        <label>nepal</label>
+        <p class="best">To get the best of your adventure you just <br> need to to leave and go where you like. We are <br> waiting for you</p>
+        <button class="plan">Plan a Trip ></button>
+        <button id="pad"><img src="play.svg" alt="image">Watch video</button>
+    </div>
+    </div>
+</body>
+</html>
