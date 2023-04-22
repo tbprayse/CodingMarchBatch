@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <style>
+        .container {
+            position: absolute;
+            top: 5px;
+            width: 1250px;
+        }
+        .couch {
+            width: 1250px;
+        }
+        .container2 {
+            background-color: black;
+            width: 1250px;
+            height: 200px;
+            position: absolute;
+            top: 650px;
+        }
+        .container3 {
+            background-color: grey;
+            width: 1250px;
+            height: 1600px;
+            position: absolute;
+            top: 800px;
+        }
+        .content {
+            position: absolute;
+            top: 10px;
+            left: 30px;
+            color: white;
+        }
+        .unorder {
+            list-style-type: none;
+            position: relative;
+            top: -50px;
+            left: 700px;
+        }
+        .list {
+            display: inline;
+            margin-left: 25px;
+        }
+        .up {
+            margin-left: 25px;
+            border: none;
+            padding: 5px 10px 5px 10px;
+            color: black;
+            background-color: white;
+        }
+        h1 {
+            position: relative;
+            top: 50px;
+            left: 275px;
+            font: bold;
+            font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 50px;
+        }
+        .range {
+            color: white;
+            position: absolute;
+            left: 60px;
+            top: 15px;
+            font-size: 25px;
+        }
+        .furniture {
+            color: white;
+            position: absolute;
+            top: 40px;
+            left: 1000px;
+            font-size: 14px;
+        }
+        .furniture2 {
+            color: white;
+            position: absolute;
+            top: 40px;
+            left: 700px;
+            font-size: 14px;
+        }
+        .furniture1 {
+            color: white;
+            position: absolute;
+            top: 40px;
+            left: 400px;
+            font-size: 14px;
+        }
+        .home {
+            color: white;
+            position: absolute;
+            left: 400px;
+        }
+        .kitchen {
+            color: white;
+            position: absolute;
+            left: 700px;
+        }
+        .office {
+            color: white;
+            position: absolute;
+            left: 1000px;
+        }
+        .best {
+            color: black;
+            text-align: center;
+            font-family: Tahoma;
+        }
+        .link {
+            text-decoration: none;
+            color: black;
+        }
+        .menu2 a:hover {
+            color: lightseagreen;
+            text-decoration: none;
+        }
+        .menu {
+            list-style-type: none;
+            border-radius: 8px;
+            background-color: lightblue;
+            padding: 4px 6px 4px 6px;
+            width: 450px;
+            height: 20px;
+            position: absolute;
+            left: 390px;
+            top: 45px;
+        }
+        .menu2 {
+            display: inline;
+            margin-left: 8px;
+        }
+        .link2 {
+            color: white;
+            text-decoration: none;
+        }
+        .link3 {
+            text-decoration: none;
+            color: black;
+        }
+        .list a:hover {
+            color: black;
+            text-decoration: none;
+        }
+        .obj {
+            background-image: url(my\ \(1\).png);
+            width: 150px;
+            height: 250px;
+            background-repeat: no-repeat;
+            border-radius: 10px;
+            position: absolute;
+            top: 135px;
+            left: 200px;
+            background-color: white;
+            background-position: center;
+        }
+        .obj3 {
+            background-image: url(my\ \(4\).png);
+            width: 150px;
+            height: 250px;
+            background-repeat: no-repeat;
+            border-radius: 10px;
+            position: absolute;
+            top: 135px;
+            left: 450px;
+            background-color: white;
+            background-position: center;
+        }
+        .obj2 {
+            background-image: url(my\ \(3\).png);
+            width: 150px;
+            height: 250px;
+            background-repeat: no-repeat;
+            border-radius: 10px;
+            position: absolute;
+            top: 135px;
+            left: 700px;
+            background-color: white;
+            background-position: center;
+        }
+        .obj1 {
+            background-image: url(my\ \(4\).png);
+            width: 150px;
+            height: 250px;
+            background-repeat: no-repeat;
+            border-radius: 10px;
+            position: absolute;
+            top: 135px;
+            left: 950px;
+            background-color: white;
+            background-position: center;
+        }
+        .read, .read2 {
+            border: none;
+            background-color: dimgray;
+            color: white;
+            text-decoration: none;
+            padding: 4px 9px 4px 4px;
+            border-radius: 4px;
+            position: initial;
+            top: 650px;
+        }
+        .service {
+            position: absolute;
+            left: 250px;
+        }
+        .service2 {
+            color: black;
+            font-weight: bold;
+            font-family: Tahoma;
+            position: absolute;
+            top: 490px;
+        }
+        .lorem {
+            position: absolute;
+            top: 525px;
+        }
+        .long {
+            height: 300px;
+        }
+        .view {
+            text-decoration: none;
+            color: white;
+        }
+        .view2 {
+            background-color: dimgray;
+            border: none;
+            padding: 5px 5px 5px 5px;
+        }
+        .box1 {
+            background-color: darkgrey;
+            border-bottom-left-radius: 20px;
+            border-top-right-radius: 20px;
+            width: 150px;
+            height: 100px;
+            position: absolute;
+            top: 450px;
+            left: 750px;
+
+        }
+        .box2 {
+            background-color: darkgrey;
+            border-bottom-left-radius: 20px;
+            border-top-right-radius: 20px;
+            width: 150px;
+            height: 100px;
+            position: absolute;
+            top: 490px;
+            left: 950px;
+        }
+        .box3 {
+            background-color: darkgrey;
+            border-bottom-left-radius: 20px;
+            border-top-right-radius: 20px;
+            width: 150px;
+            height: 100px;
+            position: absolute;
+            top: 640px;
+            left: 900px;
+        }
+        .box4 {
+            background-color: darkgrey;
+            border-bottom-left-radius: 20px;
+            border-top-right-radius: 20px;
+            width: 150px;
+            height: 100px;
+            position: absolute;
+            top: 600px;
+            left: 700px;
+        }
+        .size {
+            position: absolute;
+            left: 10px;
+            top: -10px;
+        }
+        .size2 {
+            position: absolute;
+            top: 20px;
+            left: 10px;
+        }
+        .color {
+            position: absolute;
+            left: 10px;
+            top: -10px;
+        }
+        .color2 {
+            position: absolute;
+            top: 20px;
+            left: 10px;
+        }
+        .price {
+            position: absolute;
+            left: 10px;
+            top: -10px;
+        }
+        .price2 {
+            position: absolute;
+            top: 20px;
+            left: 10px;
+        }
+        .style {
+            position: absolute;
+            left: 10px;
+            top: -10px;
+        }
+        .style2 {
+            position: absolute;
+            top: 20px;
+            left: 10px;
+        }
+        .slide {
+            position: absolute;
+            top: 850px;
+            left: 200px;
+        }
+        .side {
+            font-family: Tahoma;
+        }
+        .nth {
+            position: absolute;
+            top: 890px;
+            left: 700px;
+        }
+        .not {
+            position: absolute;
+            top: 890px;
+            left: 890px;
+        }
+        .odd {
+            position: absolute;
+            top: 890px;
+            left: 1070px; 
+        }
+        .chair {
+            position: absolute;
+            top: 1080px;
+            left: 380px;
+            width: 500px;
+            height: 300px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="mian">
+        <img class="couch" src="images3.jpeg.jpeg" alt="1.jpg">
+        <div class="content">
+            <h2>PONEC</h2>
+            <div class="content2">
+                <ul class="unorder">
+                    <li class="list"><a class="link2" href="">About</a></li>
+                    <li class="list"><a class="link2" href="">Service</a></li>
+                    <li class="list"><a class="link2" href="">Pricing</a></li>
+                    <li class="list"><a class="link2" href="">Order</a></li>
+                    <li class="list"><a class="link2" href="">Contact</a></li>
+                    <button class="up"><a class="link3" href="">Sign Up</a></button>
+                </ul>
+                <h1>Your Best Online Furniture <br>& Interior Design Services</h1>
+        </div>
+        </div>
+        <div class="container2">
+            <h4 class="range">Our Range <br>Of Products</h4>
+            <h4 class="for home">Home Furniture</h4>
+            <p class="furniture">Lorem ipsum dolor sit amet <br> adipisicing elit. Eligendi libero corporis <br> minim alias possimus repellendus</p>
+            <h4 class="for office">Office Furniturre</h4>
+            <p class="furniture1">Lorem ipsum dolor consectetur <br> adipisicing elit. Odio illo, iusto <br> necessitatibus inventore deserunt </p>
+            <h4 class="for kitchen">Kitchen Furniture</h4>
+            <p class="furniture2">Lorem ipsum dolor sit, amet <br> consectetur adipisicing elit. <br> quia maxime dolorum deserunt</p>
+        </div>
+        <div class="container3">
+            <h2 class="best">Best Selling Categories</h2>
+            <div>
+                <ul class="menu">
+                    <li class="menu2"><a class="link" href="">Home</a>  </li>
+                    <li class="menu2"><a class="link" href="">Couch</a> </li>
+                    <li class="menu2"><a class="link" href="">Desk</a> </li>
+                    <li class="menu2"><a class="link" href="">Pricing</a></li>
+                    <li class="menu2"><a class="link" href="">Order</a></li>
+                    <li class="menu2"><a class="link" href="">Services</a></li>
+                    <li class="menu2"><a class="link" href="">Hot-size</a></li>
+                    <li class="menu2"><a class="link" href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="obj">
+                
+            </div>
+            <div class="obj1">
+
+            </div>
+            <div class="obj2">
+
+            </div>
+            <div class="obj3">
+
+            </div>
+            <div>
+                <h3 class="service2 service">Our Service</h3>
+                <p class="lorem service">Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit. A qui expedita deleniti <br> eveniet! Eius nam doloribus earum <br> mollitia eos illo sunt repellendus? Minima aperiam hic <br> iste rerum tempore sed tempora?</p>
+                <button class="read
+                service"><a class="read2" href="">Read More</a></button>
+            </div>
+            <div class="box">
+                <div class="box1">
+                    <h5 class="size">Furniture Size</h5>
+                    <p class="size2">Lorem ipsum dol <br> or, sit amet con <br> secte lorem</p>
+                </div>
+                <div class="box2">
+                    <h5 class="price">Furniture Price</h5>
+                    <p class="price2">Lorem ipsum dolor <br> sit amet consectetur <br> adipisicing elit. Porro</p>
+                </div>
+                <div class="box3">
+                    <h5 class="style">Furniture Style</h5>
+                    <p class="style2">Lorem ipsum dolor <br> sit amet consectetur <br> adipisicing elit. Porro</p>
+                </div>
+                <div class="box4">
+                    <h5 class="color">Furniture Color</h5>
+                    <p class="color2">Lorem ipsum dolor <br> sit amet consectetur <br> adipisicing elit. Porro</p>
+                </div>
+            </div>
+            <div class="slide">
+                <h3 class="side">We Provide You With The <br> Best Experience</h3>
+                <p class="side2">Lorem ipsum dolor sit amet, consectetur adipisicing <br> elit. Reiciendis officia repellendus voluptate nulla <br> beatae dolores nam obcaecati tempora autem dol</p>
+                <button class="view2"><a class="view" href="">View More</a></button>
+            </div>
+            <div>
+            <p class="nth">
+                Lorem ipsum <br> doloramet <br><br>
+                <number>18+</number>
+            </p>
+            <p class="not">
+                nostrum <br> amet <br><br>
+                <number>58+</number>
+            </p>
+            <p class="odd">
+                placeat <br> odio <br><br>
+                <number>365+</number>
+            </p>
+            </div>
+            <img class="chair" src="myimages4.png" alt="">
+        </div>
+    </div>
+</body>
+</html>
