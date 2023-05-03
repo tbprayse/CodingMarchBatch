@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <style>
+        .container {
+            height: 600px;
+            width: 100%;
+            display: flex;
+        }
+        .one, .two, .three {
+            height: 600px;
+            width: 33%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="one">one</div>
+        <div class="two">two</div>
+        <div class="three">three</div>
+    </div>
+
+
+    <script>
+        let one = document.querySelector(".one");
+        let two = document.querySelector(".two");
+        let three = document.querySelector(".three");
+
+        let oneColor = window.prompt("enter first color");
+        let twoColor = window.prompt("enter second color");
+        let threeColor = window.prompt("enter third color");
+       
+        one.style.backgroundColor = oneColor
+        two.style.backgroundColor = twoColor
+        three.style.backgroundColor = threeColor
+
+        one.innerHTML = oneColor
+        two.innerHTML = twoColor
+        three.innerHTML = threeColor
+    </script>
+</body>
+</html>
