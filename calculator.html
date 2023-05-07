@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple JS Calculator / Assignment</title>
+    <style>
+        div {
+            margin-top: 50px;
+        }
+        body {
+            background-color: grey;
+        }
+        button:hover {
+            animation: colors 1s ease-in-out;
+        }
+        @keyframes colors {
+            0% {
+                box-shadow: 
+                0 0 25px white,
+                0 0 50px black;
+            }
+        }
+        .box {
+            display: flex;
+            justify-content: space-around;
+        }
+        .box1 {
+            display: flex;
+            justify-content: space-around;
+        }
+        .box2 {
+            display: flex;
+            justify-content: space-around;
+        }
+        .box3 {
+            display: flex;
+            justify-content: space-around;
+        }
+        .add {
+            margin-left: 1100px;
+            border: none;
+            padding: 4px 4px ;
+            color: white;
+            font-family:  serif;
+            background-color: black;
+        }
+        .subst {
+            border: none;
+            padding: 4px 4px ;
+            font-family:  serif;
+            margin-left: 1100px;
+            margin-top: 5px;
+            color: white;
+            background-color: black;
+        }
+        .multiply {
+            border: none;
+            background-color: black;
+            padding: 4px 4px ;
+            font-family:  serif;
+            margin-left: 1100px;
+            color: white;
+            margin-top: 10px;
+        }
+        .divide {
+            border: none;
+            background-color: black;
+            padding: 4px 4px ;
+            font-family:  serif;
+            margin-left: 1100px;
+            color: white;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <input type="number" class="one">
+        <p class="p1">
+            +
+        </p>
+        <input type="number" class="two">
+        <p class="p2">
+            =
+        </p>
+        <p class="p3">
+            
+        </p>
+    </div>
+    <button class="add">
+        Calculate
+    </button>
+    <div class="box1">
+        <input type="number" class="three">
+        <p class="p4">
+            +
+        </p>
+        <input type="number" class="four">
+        <p class="p5">
+            =
+        </p>
+        <p class="p6">
+            
+        </p>
+    </div>
+    <button class="subst">
+        Calculate
+    </button>
+    <div class="box2">
+        <input type="number" class="five">
+        <p class="p7">
+            +
+        </p>
+        <input type="number" class="six">
+        <p class="p8">
+            =
+        </p>
+        <p class="p9">
+            
+        </p>
+    </div>
+    <button class="multiply">
+        Calculate
+    </button>
+    <div class="box3">
+        <input type="number" class="seven">
+        <p class="p10">
+            +
+        </p>
+        <input type="number" class="eight">
+        <p class="p11">
+            =
+        </p>
+        <p class="p12">
+            
+        </p>
+    </div>
+    <button class="divide">
+        Calculate
+    </button>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
